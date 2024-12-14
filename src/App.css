@@ -1,0 +1,109 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.App-header {
+  background-color: #232f3e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  color: #232f3e;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #f0f0f0;
+  color: #232f3e;
+}
+
+.products {
+  width: 80%;
+  padding: 20px;
+}
+
+.products h2 {
+  color: #232f3e;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 1rem;
+  color: #232f3e;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #b12704;
+  font-size: 1.1rem;
+}
+
+.buy-now-button {
+  background-color: #ffa41c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-now-button:hover {
+  background-color: #cc8500;
+}
